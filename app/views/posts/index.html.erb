@@ -1,0 +1,22 @@
+
+  <div class="container">
+    <div class="row px-0 py-auto">
+      <div class="col-sm ">
+        <%= link_to 'ユーザー登録',new_user_registration_path, class: "sign_up" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to "ログアウト", destroy_user_session_path,class: "sign-up", method: :delete %>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+  <div><%= image_tag current_user.avatar %></div>
+  <div><%= current_user.nikcname %></div>
+  <div><%= current_user.email %></div>
+
+  </div>
